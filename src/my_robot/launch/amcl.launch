@@ -9,10 +9,16 @@
     <param name="initial_pose_x" value="2.0"/>
     <param name="initial_pose_y" value="3.5"/>
     <param name="initial_pose_a" value="0.0"/>
-    <param name="update_min_d" value="0.1"/>
-    <param name="update_min_a" value="0.3"/>
-    <param name="laser_max_beams" value="100"/>
+    <param name="update_min_d" value="0.03"/>
+    <param name="update_min_a" value="0.1"/>
+    <param name="max_particles" value="2000"/>
+    <param name="laser_model_type" value="likelihood_field"/>
+    <param name="laser_max_beams" value="80"/>
     <param name="odom_model_type" value="diff-corrected"/>
+    <param name="odom_alpha1" value="0.05"/>
+    <param name="odom_alpha2" value="0.05"/>
+    <param name="odom_alpha3" value="0.05"/>
+    <param name="odom_alpha4" value="0.05"/>
     <param name="base_frame_id" value="robot_footprint"/>
     <param name="global_frame_id" value="map"/>
 	</node>
